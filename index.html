@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css">
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="p-6">
+    <div class="max-w-md mx-auto bg-white p-6 rounded-md shadow-md">
+        <h1 class="text-2xl font-semibold mb-4">The work done</h1>
+        <form id="taskForm" class="space-y-4">
+            <div>
+                <label for="title" class="block text-gray-700 font-semibold">Title</label>
+                <input type="text" id="title" name="title" class="border border-gray-300 rounded-md p-2 w-full">
+            </div>
+
+            <div>
+                <label for="description" class="block text-gray-700 font-semibold">Description</label>
+                <textarea id="description" name="description" rows="4" cols="50" class="border border-gray-300 rounded-md p-2 w-full"></textarea>
+            </div>
+
+            <div>
+                <button type="button" id="showTaskButton" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Show Task</button>
+            </div>
+        </form>
+
+        <div id="taskOutput" class="mt-4"></div>
+    </div>
+
+    <script src="./dist/main.js"></script>
+</body>
+</html>
